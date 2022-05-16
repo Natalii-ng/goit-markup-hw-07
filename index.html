@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header>
@@ -322,7 +322,7 @@
                                 <label for="name" class="modal-field__label">Имя</label>
                                 <span class="form-block">
                                 <input type="text" class="form-block__input" name="name" id="name">
-                                <svg class="form-icon">
+                                <svg class="form-block__icon">
                                     <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                                 </svg>
                                 </span>
@@ -331,7 +331,7 @@
                                 <label for="tel" class="modal-field__label">Телефон</label>
                                 <span class="form-block">
                                 <input type="tel" class="form-block__input" name="tel" id="tel">
-                                <svg class="form-icon">
+                                <svg class="form-block__icon">
                                     <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                                 </svg>
                                 </span>
@@ -340,22 +340,22 @@
                                 <label for="mail" class="modal-field__label">Почта</label>
                                 <span class="form-block">
                                 <input type="email" class="form-block__input" name="mail" id="mail" required>
-                                <svg class="form-icon">
+                                <svg class="form-block__icon">
                                     <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
                                 </svg>
                                 </span>
                                 </div>
                                 <div class="modal-field modal-comment">
                                 <label for="comment" class="modal-field__label">Комментарий</label>
-                                <textarea name="comment" id="comment" class="form-block__input comment" placeholder="Введите текст"></textarea>
+                                <textarea name="comment" id="comment" class="form-block__input modal_comment__input" placeholder="Введите текст"></textarea>
                                 </div>
-                                <div class="policy">
-                                    <label for="policy" class="form-policy">
-                                    <input type="checkbox" name="policy" id="policy" class="checkbox">
-                                    <span class="checkbox-icon"></span>
-                                    Соглашаюсь с рассылкой и принимаю <a href="" class="license">Условия договора</a></label>
+                                <div class="form-policy">
+                                    <label for="policy" class="form-policy__label">
+                                    <input type="checkbox" name="policy" id="policy" class="form-policy__checkbox">
+                                    <span class="form-policy__icon"></span>
+                                    Соглашаюсь с рассылкой и принимаю <a href="" class="form-policy__link">Условия договора</a></label>
                                 </div>
-                                <button type="submit" class="button button-form">Отправить</button>
+                                <button type="submit" class="button modal-field__btn">Отправить</button>
                             
                             </form>
                 </div>
